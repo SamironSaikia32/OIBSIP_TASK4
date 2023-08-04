@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:background="#0c5872"
     android:padding="24dp"
     tools:context=".MainActivity">
 
@@ -13,21 +13,23 @@
         android:layout_height="wrap_content"
         android:id="@+id/total_question"
         android:textStyle="bold"
-        android:fontFamily="cursive"
+        android:textColor="@color/white"
         android:text="Total Questions"
+        android:fontFamily="monospace"
         android:layout_centerHorizontal="true"
-        android:textSize="20dp"/>
+        android:textSize="25dp"/>
 
     <TextView
         android:id="@+id/questions"
         android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
         android:text="This will be the question"
         android:textColor="@color/white"
         android:textAlignment="center"
         android:layout_margin="20dp"
-        android:textSize="24dp"
+        android:textSize="22dp"
         android:layout_above="@id/choices_layout"/>
 
     <LinearLayout
@@ -40,49 +42,61 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
             android:layout_margin="5dp"
             android:id="@+id/ans_A"
             android:backgroundTint="@color/white"
-            android:text="Ans A"
+            android:text="A"
             android:textColor="@color/black"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
             android:layout_margin="5dp"
             android:id="@+id/ans_B"
             android:backgroundTint="@color/white"
-            android:text="Ans B"
+            android:text="B"
             android:textColor="@color/black"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:layout_margin="5dp"
+            android:fontFamily="monospace"
             android:id="@+id/ans_C"
             android:backgroundTint="@color/white"
-            android:text="Ans C"
+            android:text="C"
             android:textColor="@color/black"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:layout_margin="5dp"
+            android:fontFamily="monospace"
             android:id="@+id/ans_D"
             android:backgroundTint="@color/white"
-            android:text="Ans D"
+            android:text="D"
             android:textColor="@color/black"/>
 
 
     </LinearLayout>
 
     <Button
+        android:id="@+id/submit_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_below="@+id/choices_layout"
-        android:id="@+id/submit_btn"
-        android:backgroundTint="#2196F3"
-        android:text="Submit"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="61dp"
+        android:backgroundTint="#955a9f"
+        android:fontFamily="monospace"
+        android:text="Submit">
+
 
     </Button>
+
 
 
 </RelativeLayout>
